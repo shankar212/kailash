@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Linkedin, Globe, Instagram, InstagramIcon } from "lucide-react";
+import { Linkedin, Globe, InstagramIcon } from "lucide-react";
 
 export default function Footer() {
   const socialLinks = [
