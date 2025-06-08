@@ -5,8 +5,8 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 const DOCTOR_CREDENTIALS = {
-  username: "doctor",
-  password: "password123", // ⚠️ Use env vars in real apps
+  username: "kailash",
+  password: "kailash7788", // ⚠️ Use env vars in real apps
 };
 
 export default function Login() {
