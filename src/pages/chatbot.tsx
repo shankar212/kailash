@@ -2,7 +2,6 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { useState } from "react";
 import { GoogleGenerativeAI } from "@google/generative-ai";
-
 const GEMINI_API_KEY = "AIzaSyB2pHACjalKyJFShn1xnUpLvWnp1aG2giA";
 const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
 
@@ -28,7 +27,7 @@ export default function DoctorChatbot() {
     setResponse("");
 
     if (!input.trim()) {
-      setError("⚠️ Please enter patient's symptoms.");
+      setError("⚠️ Please enter patient&apos;s symptoms.");
       return;
     }
 
@@ -102,7 +101,7 @@ ${language === "hindi-roman"
         <div className="max-w-7xl mx-auto px-6 py-6 flex items-center justify-center">
           <h1 className="text-4xl font-extrabold text-blue-700 dark:text-blue-400 select-none tracking-wide relative overflow-hidden">
             <span className="animated-gradient bg-gradient-to-r from-blue-400 via-blue-600 to-blue-400 bg-clip-text text-transparent animate-shimmer">
-              Doctor's AI Companion
+              Doctor&apos;s AI Companion
             </span>
           </h1>
         </div>
@@ -117,11 +116,11 @@ ${language === "hindi-roman"
               htmlFor="symptoms"
               className="font-semibold text-gray-700 dark:text-gray-300 text-lg"
             >
-              Enter Patient's Symptoms:
+              Enter Patient&apos;s Symptoms:
             </label>
             <textarea
               id="symptoms"
-              placeholder="Describe patient's symptoms here..."
+              placeholder="Describe patient&apos;s symptoms here..."
               value={input}
               onChange={(e) => setInput(e.target.value)}
               rows={8}
