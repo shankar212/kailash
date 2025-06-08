@@ -236,7 +236,7 @@ export default function Contact() {
                     id="emailHelp"
                     className="text-xs text-gray-600 dark:text-gray-400 mt-1 block"
                   >
-                    We'll respond to this email address
+                    We&apos;ll respond to this email address
                   </small>
                 )}
               </motion.div>
