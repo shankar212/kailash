@@ -218,7 +218,7 @@ export default function Home() {
               aria-label="Doctor working image"
             >
               <Image
-                src="/doctor1.png"
+                src="/doctor4.png"
                 alt="Doctor Working"
                 width={500}
                 height={450}
