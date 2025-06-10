@@ -1,3 +1,138 @@
+
+# 👨‍⚕️ Doctor's AI Companion Portal
+
+Live Site: [kailash-rathod.vercel.app](https://kailash-rathod.vercel.app)
+
+A secure, doctor-only platform that combines AI-driven medical insights and patient appointment management — built with Next.js, Firebase, and Google Gemini AI.
+
+---
+
+## 🚀 Features
+
+### 🔐 Secure Login (Doctor-Only)
+- Uses Firebase Authentication to ensure that only verified doctors can access private tools like appointment records and AI assistance.
+
+### 📅 Appointment Scheduling
+- Doctors can view and manage appointments with a clean, responsive UI.
+- Appointments are stored securely in Firebase Firestore.
+
+### 🤖 AI Medical Companion
+- Built with **Gemini 1.5 Flash** (Google Generative AI).
+- Doctors can enter patient symptoms and optionally upload images (e.g., rashes, wounds).
+- AI returns:
+  - **Likely Diagnosis**
+  - **Symptom Overview**
+  - **Suggested Treatment**
+  - **Red Flags**
+  - **Suggested Medical Tests**
+- Supports English and **Hindi (in Roman script)** for flexible input.
+
+---
+
+## 🛠 Tech Stack
+
+| Technology | Purpose |
+|------------|---------|
+| **Next.js 14** | Frontend framework (React-based) |
+| **Tailwind CSS** | Styling and responsive design |
+| **Firebase Auth** | Secure login functionality |
+| **Firebase Firestore** | Real-time database for appointments |
+| **Google Generative AI (Gemini API)** | AI-powered medical assistant |
+| **Vercel** | Deployment & hosting |
+
+---
+
+## 📷 Screenshots
+
+> Add screenshots of:
+> - Login Page
+> - AI Companion Form (with image upload)
+> - About
+> - Home
+> - AI response output
+> - Appointment Dashboard
+
+---
+
+## 📁 Project Structure
+
+```
+/pages
+
+  /Home              → Responsive home page
+  /About             → About Doctor
+  /appointments      → Doctor's appointment dashboard
+  /ai-companion      → AI symptom input and response
+  /login             → Doctor login page
+  /api               → API routes if any
+
+/components
+  Button.tsx, Navbar.tsx, Input.tsx, etc.
+
+utils/
+  firebase.ts        → Firebase config
+  gemini.ts          → Gemini API integration
+
+public/
+  favicon, logo, etc.
+```
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1. Clone the Repo
+
+```bash
+git clone https://github.com/yourusername/doctor-ai-portal.git
+cd doctor-ai-portal
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Add Environment Variables
+
+Create a `.env.local` file:
+
+```env
+NEXT_PUBLIC_FIREBASE_API_KEY=your_key
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_domain
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
+NEXT_PUBLIC_GEMINI_API_KEY=your_gemini_key
+```
+
+### 4. Run Locally
+
+```bash
+npm run dev
+```
+
+---
+
+## 🛡️ Security Note
+
+- Only authenticated doctors can access AI tools and appointment data.
+- Patient information is not stored or shared beyond doctor's session unless implemented explicitly.
+
+---
+
+## 📬 Contact
+
+Built with ❤️ by [Rathod Shanker](mailto:shanker.rathod77@gmail.com)
+
+- 📍 MCA @ NIT Warangal
+- 🌐 [LinkedIn](https://linkedin.com/in/rathodshanker)
+
+---
+
+## 📜 License
+
+This project is for educational and professional portfolio use. If you'd like to use this for your own clinic or need a customized version, feel free to contact me.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
 
 ## Getting Started
