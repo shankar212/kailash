@@ -101,7 +101,7 @@ export default function About() {
             aria-label="Image of Dr. Rathod Kailash"
           >
             <Image
-              src="/doctor1.png"
+              src="/doctor3.jpg"
               alt="Dr. Rathod Kailash"
               width={500}
               height={600}
