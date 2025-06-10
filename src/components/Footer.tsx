@@ -4,7 +4,7 @@ import { Linkedin, Globe, InstagramIcon } from "lucide-react";
 export default function Footer() {
   const socialLinks = [
     { href: "https://www.instagram.com/rathod_kailash_8?igsh=MXcxcnBjZXlrMjE4NQ==", icon: <InstagramIcon size={24} />, label: "Instagram" },
-    { href: "https://www.linkedin.com/in/shanker-rathod", icon: <Linkedin size={24} />, label: "LinkedIn" },
+    { href: "https://www.linkedin.com/in/shanker-rathod-4a609421b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", icon: <Linkedin size={24} />, label: "LinkedIn" },
     { href: "https://shankerr.me", icon: <Globe size={24} />, label: "Portfolio" },
     
   ];
